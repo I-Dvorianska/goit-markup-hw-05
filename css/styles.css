@@ -1,0 +1,109 @@
+:root {
+  --accent-blue-color: #2196f3;
+  --title-black-color: #212121;
+  --text-gris-color: #757575;
+  --h1-white: #ffffff;
+  --white-op60: #ffffff60;
+
+  --background-all: #ffffff;
+  --background-color-team: #f5f4fa;
+  --background-color-footer: #2f303a;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.body {
+  background-color: var(--background-all);
+  font-family: Roboto, sans-serif;
+}
+
+/* heroe */
+h2,
+h3,
+h4 {
+  color: var(--title-black-color);
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-title {
+  color: var(--h1-white);
+  background-color: tan;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.heroe-link {
+  color: var(--h1-white);
+  background-color: var(--accent-blue-color);
+}
+
+/*advantages*/
+.advantages-titles {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantages-text {
+  color: var(--text-gris-color);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* work */
+.work {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+/* our-team */
+.our-team {
+  background-color: var(--background-color-team);
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.profession {
+  color: var(--text-gris-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
