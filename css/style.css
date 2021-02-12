@@ -32,6 +32,11 @@ a {
 
 /* HEADER */
 
+.header {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -47,7 +52,7 @@ a {
   color: var(--black100);
 }
 
-.nav-list,
+.main-nav,
 .header-list,
 .contact-link.header-link {
   display: flex;
@@ -72,6 +77,9 @@ a {
 .contact-link {
   display: flex;
   margin-left: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
 }
 
 .contact-link li:first-child {
@@ -118,12 +126,10 @@ a {
 
   outline: 2px solid tomato;
   margin-top: 0px;
+  margin-bottom: 0px;
+ 
   padding-top: 200px;
   padding-bottom: 0px;
-}
-
-.section-hero h1 {
-  margin: 0;
 }
 
 .btn-hero {
@@ -141,25 +147,30 @@ a {
   border-radius: 4px;
 }
 
-/* SECTION ABOUT OUR WORK */
+.btn-hero:hover,
+.btn-hero:focus {
+  background-color: #188CE8;
+  cursor: pointer;
+}
+/* advantages */
 
-.about.container,
 .description-list {
   display: flex;
 }
 
-.description-list {
-  margin-top: 94px;
-  padding: 0;
+.advantages-list {
+  display: flex;
+  padding-left: 0px;
   margin-bottom: 0px;
+  margin-top: 0px;
 }
 
-.description-list li {
+.advantages {
+margin-top: 94px;
+}
+
+.advantages-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.description-list li:last-child {
-  margin-right: 0px;
 }
 
 .about-title {
@@ -181,7 +192,7 @@ a {
   overflow: hidden;
 }
 
-.description-list h3 {
+.advantages-list h3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -189,7 +200,10 @@ a {
   color: var(--primary-color-text);
 }
 
-.description-list p {
+.advantages-text{
+margin-top: 0px;
+margin-bottom: 0px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
