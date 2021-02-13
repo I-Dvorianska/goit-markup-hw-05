@@ -166,7 +166,7 @@ a {
 }
 
 .advantages {
-margin-top: 94px;
+  margin-top: 94px;
 }
 
 .advantages-item:not(:last-child) {
@@ -201,8 +201,8 @@ margin-top: 94px;
 }
 
 .advantages-text{
-margin-top: 0px;
-margin-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 
   font-weight: 400;
   font-size: 14px;
@@ -212,71 +212,78 @@ margin-bottom: 0px;
 
 /* ABOUT WORK TEAM */
 
-.title-our-team {
-  background-color: var(--background-btn-portfolio);
-  height: 648px;
+.work {
+  margin-top: 94px;
 }
-
-.our-team ul {
-  margin: 0px;
-  padding: 0px;
-}
-
-.our-team.container,
 .team-img {
+  margin: 50px 0px 0px 0px;
+  padding: 0px;
   display: flex;
   justify-content: center;
 }
 
-.team-img li {
+.work-photo:not(:last-child) {
   margin-right: 30px;
 }
 
-.team-img li:last-child {
-  margin-right: 0px;
-}
+.work-title {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
 
-.title-work-team {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-color-text);
-  margin-top: 94px;
-  margin-bottom: 50px;
 }
 
 /* ABOUT OUR TEAM */
 
-.title-our-team ul {
-  margin: 0px;
-  padding: 0px;
+
+.team-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 94px;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 36px;
 }
 
-.title-our-team.container,
 .team-list {
   display: flex;
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  padding-bottom: 94px;
 }
 
-.title-work-team {
-  margin-top: 188px;
-  margin-bottom: 50px;
+.our-team {
+  margin-top: 46px;
+
+  background-color: var(--background-btn-portfolio);
 }
 
-.team-list li {
+.team-card:not(:last-child) {
   margin-right: 30px;
 }
 
-.title-our-team h3 {
+.name{
+  margin-top: 30px;
+  margin-bottom: 0px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   color: var(--primary-color-text);
 }
 
-.title-our-team p {
+.team-list p {
+  margin-top: 10px;
+  margin-bottom: 0px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -285,15 +292,52 @@ margin-bottom: 0px;
 
 /* FOOTER */
 
+.box-footer {
+  margin-top: 46px;
+  background-color: var(--background-hero);
+  min-height: 252px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-top: 60px;
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
 .logo-white {
   color: var(--tertiary-color-text);
 }
 
-.box-footer {
-  background-color: var(--background-hero);
+.address {
+  margin-top: 20px;
+  padding-bottom: 60px;
 }
 
-.footer-address-link {
+.address-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  color: var(--tertiary-color-text);
+}
+
+.footer-list {
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.footer-link {
+  display: inline-block;
+  padding-top: 9px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -301,17 +345,9 @@ margin-bottom: 0px;
   color: var(--gris-op60);
 }
 
-.footer-address-link:hover,
-.footer-address-link:focus {
+.footer-link:hover,
+.footer-link:focus {
   color: var(--accent-color);
-}
-
-.address {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  font-style: normal;
-  color: var(--tertiary-color-text);
 }
 
 /* PORTFOLIO PAGE*/
