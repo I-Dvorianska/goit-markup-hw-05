@@ -295,7 +295,6 @@ a {
 .box-footer {
   margin-top: 46px;
   background-color: var(--background-hero);
-  min-height: 252px;
 }
 
 .footer-logo {
@@ -351,8 +350,30 @@ a {
 }
 
 /* PORTFOLIO PAGE*/
+/*buttons*/
+
+.portfolio {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.btn-list {
+ display: flex;
+ justify-content: center;
+ margin-top: 0px;
+ margin-bottom: 34px;
+
+ padding-left: 0px;
+}
+
+.filters:not(:last-child) {
+  margin-right: 8px;
+}
 
 .btn-portfolio {
+  padding: 6px 22px;
+
+  border-radius: 4px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -362,23 +383,49 @@ a {
   background-color: var(--background-btn-portfolio);
   color: var(--primary-color-text);
 }
-
 .btn-portfolio:hover,
 .btn-portfolio:focus {
-  background-color: var(--blue-text);
+  background-color: var(--accent-color);
   color: var(--tertiary-color-text);
+  cursor: pointer;
 }
 
-.title-project {
+.project-title {
+  margin-bottom: 0px;
+  margin-top: 20px;
+  padding-left: 24px;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-color-text);
 }
 
-.title-apps {
+.portfolio-text {
+  margin-top: 4px;
+  margin-bottom: 0px;
+  padding-left: 24px;
+
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondary-color-text);
 }
+/*projects*/
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+  margin-right: -30px;
+  margin-top: -30px;
+  
+}
+
+.project-item {
+flex-basis: calc(100% / 3 - 30px);
+margin-right: 30px;
+margin-top: 30px;
+}
+
