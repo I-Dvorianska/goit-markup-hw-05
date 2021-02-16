@@ -27,7 +27,7 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
+
 }
 
 /* HEADER */
@@ -35,6 +35,7 @@ a {
 .header {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid rgb(236, 236, 236);
 }
 
 .logo {
@@ -71,7 +72,7 @@ a {
 
 .header-list {
   margin: 0;
-  padding: 0;
+  padding: 0px;
 }
 
 .contact-link {
@@ -91,6 +92,8 @@ a {
   font-size: 14px;
   line-height: 1.14;
   color: var(--primary-color-text);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-nav:hover,
@@ -105,6 +108,8 @@ a {
   font-size: 14px;
   line-height: 1.14;
   color: var(--secondary-color-text);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* HERO */
@@ -124,7 +129,6 @@ a {
   letter-spacing: 0.06em;
   color: var(--tertiary-color-text);
 
-  outline: 2px solid tomato;
   margin-top: 0px;
   margin-bottom: 0px;
  
@@ -166,7 +170,7 @@ a {
 }
 
 .advantages {
-  margin-top: 94px;
+  padding-top: 94px;
 }
 
 .advantages-item:not(:last-child) {
@@ -213,7 +217,7 @@ a {
 /* ABOUT WORK TEAM */
 
 .work {
-  margin-top: 94px;
+  padding-top: 94px;
 }
 .team-img {
   margin: 50px 0px 0px 0px;
@@ -261,7 +265,8 @@ a {
 }
 
 .our-team {
-  margin-top: 46px;
+  padding-top: 94px;
+  margin-bottom: 94px;
 
   background-color: var(--background-btn-portfolio);
 }
@@ -353,8 +358,8 @@ a {
 /*buttons*/
 
 .portfolio {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .btn-list {
