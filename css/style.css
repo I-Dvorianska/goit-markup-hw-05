@@ -7,6 +7,7 @@
   --black100: #000000;
   --background-hero: #2f303a;
   --background-btn-portfolio: #f5f4fa;
+  --gradient: rgba(47, 48, 58, 0.4);
 }
 
 body {
@@ -27,7 +28,6 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-
 }
 
 /* HEADER */
@@ -73,6 +73,18 @@ a {
 .header-list {
   margin: 0;
   padding: 0px;
+}
+
+.mail-icon {
+  display: inline-flex;
+
+  width: 16px;
+  height: 12px;
+}
+
+.mail-icon:hover,
+.mail-icon:focus {
+  cursor: pointer;
 }
 
 .contact-link {
@@ -121,13 +133,11 @@ a {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  /* background-image: linear-gradient(
-    to right, 
-    rgba(47, 48, 58, 0.4)
-    ), 
-   url("../images/team.jpg");
-   background-repeat: no-repeat;*/
-} 
+  background-image: linear-gradient(to right, var(--gradient), var(--gradient)),
+    url('../images/team.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
 
 .title-hero {
   font-weight: 900;
@@ -139,7 +149,7 @@ a {
 
   margin-top: 0px;
   margin-bottom: 0px;
- 
+
   padding-top: 200px;
   padding-bottom: 0px;
 }
@@ -161,8 +171,9 @@ a {
 
 .btn-hero:hover,
 .btn-hero:focus {
-  background-color: #188CE8;
+  background-color: #188ce8;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* advantages */
 
@@ -212,7 +223,7 @@ a {
   color: var(--primary-color-text);
 }
 
-.advantages-text{
+.advantages-text {
   margin-top: 0px;
   margin-bottom: 0px;
 
@@ -252,7 +263,6 @@ a {
 
 /* ABOUT OUR TEAM */
 
-
 .team-title {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -279,11 +289,16 @@ a {
   background-color: var(--background-btn-portfolio);
 }
 
+.team-card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .team-card:not(:last-child) {
   margin-right: 30px;
 }
 
-.name{
+.name {
   margin-top: 30px;
   margin-bottom: 0px;
 
@@ -293,7 +308,7 @@ a {
   color: var(--primary-color-text);
 }
 
-.team-list p {
+.team-text p {
   margin-top: 10px;
   margin-bottom: 0px;
 
@@ -371,12 +386,12 @@ a {
 }
 
 .btn-list {
- display: flex;
- justify-content: center;
- margin-top: 0px;
- margin-bottom: 34px;
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 34px;
 
- padding-left: 0px;
+  padding-left: 0px;
 }
 
 .filters:not(:last-child) {
@@ -401,6 +416,8 @@ a {
   background-color: var(--accent-color);
   color: var(--tertiary-color-text);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-title {
@@ -433,12 +450,10 @@ a {
   padding: 0px;
   margin-right: -30px;
   margin-top: -30px;
-  
 }
 
 .project-item {
-flex-basis: calc(100% / 3 - 30px);
-margin-right: 30px;
-margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-right: 30px;
+  margin-top: 30px;
 }
-
