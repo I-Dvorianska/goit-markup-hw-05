@@ -8,6 +8,7 @@
   --background-hero: #2f303a;
   --background-btn-portfolio: #f5f4fa;
   --gradient: rgba(47, 48, 58, 0.4);
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -261,7 +262,7 @@ a {
   color: var(--primary-color-text);
 }
 
-/* ABOUT OUR TEAM */
+/* OUR TEAM */
 
 .team-title {
   margin-top: 0px;
@@ -316,6 +317,18 @@ a {
   font-size: 16px;
   line-height: 1.18;
   color: var(--secondary-color-text);
+}
+
+.social-networks {
+  margin: 0px;
+  padding: 0px;
+  color: var(--icon-color);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 /* FOOTER */
