@@ -9,6 +9,7 @@
   --background-btn-portfolio: #f5f4fa;
   --gradient: rgba(47, 48, 58, 0.4);
   --icon-color: #afb1b8;
+  --icon-background: #f5f4fa;
 }
 
 body {
@@ -76,16 +77,35 @@ a {
   padding: 0px;
 }
 
-.mail-icon {
+.header-icon {
   display: inline-flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
+.mail-icon {
   width: 16px;
   height: 12px;
+  margin-right: 10px;
+
+  fill: var(--secondary-color-text);
+}
+
+.tel-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+
+  fill: var(--secondary-color-text);
 }
 
 .mail-icon:hover,
-.mail-icon:focus {
+.mail-icon:focus,
+.tel-icon:hover,
+.tel-icon:focus {
   cursor: pointer;
+  fill: var(--accent-color);
 }
 
 .contact-link {
@@ -100,6 +120,11 @@ a {
   margin-right: 50px;
 }
 
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
 .header-nav {
   font-weight: 500;
   font-size: 14px;
@@ -110,9 +135,7 @@ a {
 }
 
 .header-nav:hover,
-.header-nav:focus,
-.header-link:hover,
-.header-link:focus {
+.header-nav:focus {
   color: var(--accent-color);
 }
 
@@ -121,8 +144,6 @@ a {
   font-size: 14px;
   line-height: 1.14;
   color: var(--secondary-color-text);
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 /* HERO */
@@ -182,6 +203,14 @@ a {
   display: flex;
 }
 
+.advantages-icons {
+  width: 70px;
+  height: 70px;
+  padding: 25px 100px;
+
+  background-color: var(--icon-background);
+}
+
 .advantages-list {
   display: flex;
   padding-left: 0px;
@@ -198,7 +227,7 @@ a {
 }
 
 .about-title {
-  margin-top: 0px;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -234,7 +263,7 @@ a {
   color: var(--secondary-color-text);
 }
 
-/* ABOUT WORK TEAM */
+/*  WORK*/
 
 .work {
   padding-top: 94px;
@@ -285,12 +314,12 @@ a {
 
 .our-team {
   padding-top: 94px;
-  margin-bottom: 94px;
 
   background-color: var(--background-btn-portfolio);
 }
 
 .team-card {
+  background-color: var(--tertiary-color-text);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -300,13 +329,18 @@ a {
 }
 
 .name {
-  margin-top: 30px;
+  margin-top: 0px;
   margin-bottom: 0px;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   color: var(--primary-color-text);
+}
+
+.team-text {
+  padding-bottom: 16px;
+  padding-top: 30px;
 }
 
 .team-text p {
@@ -320,21 +354,83 @@ a {
 }
 
 .social-networks {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
   margin: 0px;
-  padding: 0px;
+  padding: 0px 32px 30px 32px;
+}
+
+.svg-icon {
+  display: flex;
+  align-items: center;
+}
+
+.link-icon {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
   color: var(--icon-color);
+}
+.link-icon:hover,
+.link-icon:focus {
+  background-color: var(--accent-color);
+  color: var(--tertiary-color-text);
 }
 
 .social-icon {
-  width: 20px;
-  height: 20px;
   fill: currentColor;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  color: var(--tertiary-color-text);
+}
+
+/* Clients */
+
+.client-section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17px;
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.client-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+}
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* FOOTER */
 
 .box-footer {
-  margin-top: 46px;
   background-color: var(--background-hero);
 }
 
