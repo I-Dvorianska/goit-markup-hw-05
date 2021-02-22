@@ -501,6 +501,26 @@ a {
   color: var(--accent-color);
 }
 
+.action {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  margin: 0px;
+
+  color: var(--tertiary-color-text);
+}
+
+.footer-icons {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.social-footer-icon {
+  fill: var(--tertiary-color-text);
+}
+
 /* PORTFOLIO PAGE*/
 /*buttons*/
 
