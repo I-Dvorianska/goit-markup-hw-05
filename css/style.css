@@ -78,10 +78,15 @@ a {
 }
 
 .header-icon {
-  display: inline-flex;
-  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.header-link:hover .tel-icon,
+.header-link:focus .tel-icon,
+.header-link:hover .mail-icon,
+.header-link:focus .mail-icon {
+  fill: var(--accent-color);
 }
 
 .mail-icon {
@@ -98,14 +103,6 @@ a {
   margin-right: 10px;
 
   fill: var(--secondary-color-text);
-}
-
-.mail-icon:hover,
-.mail-icon:focus,
-.tel-icon:hover,
-.tel-icon:focus {
-  cursor: pointer;
-  fill: var(--accent-color);
 }
 
 .contact-link {
@@ -140,9 +137,12 @@ a {
 }
 
 .header-link {
+  display: inline-flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+
   color: var(--secondary-color-text);
 }
 
@@ -426,6 +426,21 @@ a {
 
 .client-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.client-item:hover,
+.client-item:focus {
+  border-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.client-item:hover > .client-icon,
+.client-item:focus > .client-icon {
+  fill: var(--accent-color);
+}
+
+.client-icon {
+  fill: var(--icon-color);
 }
 
 /* FOOTER */
