@@ -434,8 +434,16 @@ a {
   cursor: pointer;
 }
 
-.client-item:hover > .client-icon,
-.client-item:focus > .client-icon {
+.client-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.client-page:hover > .client-icon,
+.client-page:focus > .client-icon {
   fill: var(--accent-color);
 }
 
@@ -447,6 +455,10 @@ a {
 
 .box-footer {
   background-color: var(--background-hero);
+}
+
+.footer-boxes {
+  display: flex;
 }
 
 .footer-logo {
@@ -479,6 +491,12 @@ a {
   color: var(--tertiary-color-text);
 }
 
+.footer-box-2 {
+  margin-left: 70px;
+  margin-top: 72px;
+  margin-bottom: 100px;
+}
+
 .footer-list {
   padding-left: 0px;
   margin-top: 0px;
@@ -502,11 +520,14 @@ a {
 }
 
 .action {
+  margin: 0px;
+  margin-bottom: 20px;
+
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
+  letter-spacing: 0.03em;
   line-height: 1.14;
-  margin: 0px;
 
   color: var(--tertiary-color-text);
 }
@@ -516,8 +537,28 @@ a {
   margin: 0px;
   padding: 0px;
 }
+.footer-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-list-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  background-color: #ffffff10;
+}
+
+.footer-list-icons:hover,
+.footer-list-icons:focus {
+  background-color: var(--accent-color);
+}
 
 .social-footer-icon {
+  padding: 12px;
+
   fill: var(--tertiary-color-text);
 }
 
@@ -534,7 +575,6 @@ a {
   justify-content: center;
   margin-top: 0px;
   margin-bottom: 34px;
-
   padding-left: 0px;
 }
 
@@ -544,14 +584,14 @@ a {
 
 .btn-portfolio {
   padding: 6px 22px;
-
-  border-radius: 4px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+
   border: none;
+  border-radius: 4px;
   background-color: var(--background-btn-portfolio);
   color: var(--primary-color-text);
 }
