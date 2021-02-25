@@ -11,6 +11,7 @@
   --inactive-color-button: #afb1b8;
   --background-color-button: rgba(255, 255, 255, 0.1);
   --border-color: #eeeeee;
+  --background-color-op80: rgba(47, 48, 58, 0.8);
 }
 
 body {
@@ -96,6 +97,22 @@ p {
   line-height: 1.14;
   color: var(--primary-color-text);
   padding: 32px 0px;
+}
+
+.current {
+  position: relative;
+  color: var(--accent-color);
+}
+
+.current::after {
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 100%;
+  bottom: -1px;
+
+  border-radius: 2px;
+  background-color: var(--accent-color);
 }
 
 .link-item {
@@ -252,23 +269,42 @@ p {
   padding-bottom: 94px;
 }
 
-.our-work ul {
+.work-list {
   margin: 0px;
   padding: 0px;
 }
 
 .our-work.container,
-.img-work {
+.work-list {
   display: flex;
   justify-content: center;
 }
 
-.img-work li {
+.work-list li {
+  position: relative;
   margin-right: 30px;
 }
 
-.img-work li:last-child {
+.work-list li:last-child {
   margin-right: 0px;
+}
+
+.img-title {
+  position: absolute;
+  margin: 0px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 370px;
+  bottom: 0px;
+  text-align: center;
+
+  font-size: 14px;
+  line-height: 1.14px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: var(--tertiary-color-text);
+  background-color: var(--background-color-op80);
 }
 
 .title-work {
