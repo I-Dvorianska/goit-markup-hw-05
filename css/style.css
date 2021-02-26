@@ -97,6 +97,7 @@ p {
   line-height: 1.14;
   color: var(--primary-color-text);
   padding: 32px 0px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
@@ -124,6 +125,8 @@ p {
   padding-bottom: 31px;
   display: flex;
   align-items: center;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-message {
@@ -204,6 +207,10 @@ p {
   border-radius: 4px;
 }
 
+.btn-hero:hover {
+  cursor: pointer;
+}
+
 /* ---------- ADVANTAGES----------  */
 .advantages {
   margin-top: 0px;
@@ -232,7 +239,7 @@ p {
   overflow: hidden;
 }
 
-.description-list h3 {
+.title-item {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -251,6 +258,10 @@ p {
   margin-bottom: 0px;
 }
 
+.description-list li:not(:last-child) {
+  margin-right: 30px;
+}
+
 .advantages-list {
   display: flex;
   align-items: center;
@@ -258,6 +269,7 @@ p {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
+
   background-color: var(--background-btn-portfolio);
 }
 
@@ -291,7 +303,9 @@ p {
 
 .img-title {
   position: absolute;
+  display: inline-block;
   margin: 0px;
+  padding: 0px;
   padding-top: 27px;
   padding-bottom: 27px;
   width: 370px;
@@ -299,7 +313,6 @@ p {
   text-align: center;
 
   font-size: 14px;
-  line-height: 1.14px;
   font-weight: 700;
   text-transform: uppercase;
 
@@ -337,12 +350,14 @@ p {
   font-size: 36px;
   margin-top: 0px;
   margin-bottom: 50px;
+  padding-top: 94px;
 }
 
-.team-list li {
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  border-radius: 3px;
+.card-team {
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
 .team-list .card-team:not(:first-child) {
@@ -392,6 +407,8 @@ p {
   align-items: center;
   justify-content: center;
   fill: var(--inactive-color-button);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-icon:hover,
@@ -436,11 +453,18 @@ p {
   height: 90px;
   border: 1px solid var(--inactive-color-button);
   border-radius: 5px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-client:hover,
 .item-client:focus {
   border: 1px solid var(--accent-color);
+}
+
+.icon-client {
+  fill: var(--inactive-color-button);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-client:hover .icon-client,
@@ -477,6 +501,7 @@ p {
 
   display: inline-block;
   margin-top: 9px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address {
@@ -525,6 +550,8 @@ p {
   border-radius: 50%;
   background-color: var(--background-color-button);
   fill: var(--tertiary-color-text);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-footer:hover,
@@ -580,12 +607,10 @@ p {
   padding: 6px 22px;
   border-radius: 4px;
   justify-content: center;
-}
 
-.card-link {
-  display: block;
-  width: 100%;
-  height: 100%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-item:hover,
@@ -594,6 +619,14 @@ p {
   color: var(--tertiary-color-text);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+}
+
+.card-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-link:hover,
