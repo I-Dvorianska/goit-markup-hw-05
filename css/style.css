@@ -234,16 +234,20 @@ p {
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
-  background-color: var(--tertiary-color-text);
-  z-index: 10;
-  padding: 15px;
-
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  /* without content no function*/
+  max-width: 528px;
+  width: 100%;
+  min-height: 581px;
+  max-height: 100vh;
+  padding: 15px;
+  overflow-y: auto;
+
+  background-color: var(--tertiary-color-text);
+  z-index: 10;
 }
 
 .modal-close {
@@ -257,6 +261,10 @@ p {
   border: 1px solid var(--close-border-op10);
   border-radius: 50%;
   background-color: var(--tertiary-color-text);
+}
+
+.modal-close:hover {
+  cursor: pointer;
 }
 
 .modal-close svg {
@@ -456,6 +464,7 @@ p {
   display: flex;
   width: 40px;
   height: 40px;
+  border-radius: 50%;
   align-items: center;
   justify-content: center;
   fill: var(--inactive-color-button);
@@ -569,7 +578,8 @@ p {
   color: var(--accent-color);
 }
 
-.box-link p {
+.box-link p,
+.action-footer p {
   display: flex;
   font-size: 14px;
   font-weight: 700;
@@ -587,6 +597,7 @@ p {
 
 .box-link {
   margin-left: 70px;
+  margin-right: 93px;
 }
 
 .social-list-footer:not(:last-child) {
@@ -612,6 +623,44 @@ p {
   background-color: var(--accent-color);
 }
 
+.footer-form {
+  display: flex;
+}
+
+.form-field {
+  position: relative;
+}
+
+.footer-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  color: greenyellow;
+}
+
+.send-mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  padding: 0px;
+  margin-left: 12px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-width: 1px;
+  border-radius: 4px;
+  color: var(--tertiary-color-text);
+  background-color: var(--accent-color);
+}
+.send-icon {
+  margin-left: 10px;
+}
 /* ----------PORTFOLIO PAGE----------*/
 
 .portfolio {
