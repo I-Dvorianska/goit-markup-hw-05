@@ -620,7 +620,7 @@ p {
   margin-left: 10px;
 }
 
-/* Modal */
+/* MODAL */
 
 .backdrop {
   position: fixed;
@@ -678,7 +678,8 @@ p {
 .modal-close svg {
   fill: var(--black100);
 }
-.modal-close:hover > svg {
+.modal-close:hover > svg,
+.modal-close:focus > svg {
   fill: var(--accent-color);
 }
 
@@ -793,6 +794,7 @@ p {
   cursor: pointer;
 }
 
+.checkbox:focus + .checkbox-icon,
 .checkbox:checked + .checkbox-icon {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
