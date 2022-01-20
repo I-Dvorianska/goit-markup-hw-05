@@ -1,0 +1,138 @@
+.footer {
+  background-color: var(--background-hero);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-top: 0px;
+}
+
+.logo-white {
+  color: var(--tertiary-color-text);
+}
+
+.links p {
+  display: inline-block;
+  padding: 0px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.footer-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  color: var(--gris-op60);
+
+  display: inline-block;
+  margin-top: 9px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  color: var(--tertiary-color-text);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+}
+
+.box-link p,
+.action-footer p {
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--tertiary-color-text);
+  margin-bottom: 20px;
+}
+
+.box,
+.list-footer-link {
+  display: flex;
+  align-items: baseline;
+}
+
+.box-link {
+  margin-left: 70px;
+  margin-right: 93px;
+}
+
+.social-list-footer:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon-footer {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--background-color-button);
+  fill: var(--tertiary-color-text);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-footer:hover,
+.icon-footer:focus {
+  cursor: pointer;
+  background-color: var(--accent-color);
+}
+
+.footer-form {
+  display: flex;
+}
+
+.form-field {
+  position: relative;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.footer-input {
+  padding: 15px;
+  width: 358px;
+
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: var(--background-hero);
+  color: var(--footer-email-color);
+}
+
+.footer-input::placeholder {
+  color: var(--footer-email-color);
+}
+
+.send-mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  padding: 10px;
+  margin-left: 12px;
+
+  font-weight: 700;
+  font-size: 16px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  color: var(--tertiary-color-text);
+  background-color: var(--accent-color);
+}
+
+.send-mail:hover,
+.send-mail:focus {
+  cursor: pointer;
+}
+
+.send-icon {
+  fill: var(--tertiary-color-text);
+  margin-left: 10px;
+}
